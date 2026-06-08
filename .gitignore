@@ -1,1 +1,84 @@
 /.metadata/
+
+# ====================================================================
+# 자바 프로젝트 표준 .gitignore 템플릿
+# ====================================================================
+
+# 1. 컴파일된 자바 클래스 파일 및 빌드 산출물
+# --------------------------------------------------------------------
+*.class
+*.log
+*.ctxt
+.mtj.tmp/
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# 2. 빌드 도구 관련 (Maven 및 Gradle)
+# --------------------------------------------------------------------
+# Maven 빌드 디렉토리
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.next
+pom.xml.note
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle 빌드 디렉토리 및 캐시
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# 3. 개발 도구(IDE) 관련 설정 파일
+# --------------------------------------------------------------------
+# JetBrains IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse
+.metadata/
+bin/
+tmp/
+.tmp/
+.classpath
+.project
+.settings/
+*.launch
+.factorypath
+
+# Visual Studio Code
+.vscode/
+
+# 4. 운영체제(OS) 생성 파일
+# --------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.lnk
+
+# 5. 보안 및 로컬 환경 설정 (가장 중요!)
+# --------------------------------------------------------------------
+# 데이터베이스 비밀번호, API 키 등이 포함된 설정 파일은 제외해야 합니다.
+# 예: Spring Boot의 로컬 설정 파일
+application-local.properties
+application-local.yml
+.env
+*.local
